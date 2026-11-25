@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía de Tallas y Sobre Nosotros | TU1ERZAPATICO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-banner">
+    <span>🛡️ COMPRA SEGURA: Cambios de talla garantizados dentro de los primeros 7 días</span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="ri-fire-fill"></i></span>
+        TU1ERZAPATICO<span></span>
+      </a>
+
+      <div class="search-box">
+        <input type="text" id="globalSearch" placeholder="Buscar productos..." />
+        <button type="button" id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="ofertas.html" class="nav-hot">Remates $10 / 2x$15</a>
+        <a href="nosotros.html" class="active">Guía & Tienda</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-trigger" id="openCartBtn">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="hero-badge">CALIDAD Y ECONOMÍA FAMILIAR</span>
+      <h1>Sobre KICKS & BAGS y Guía de Tallas</h1>
+      <p>Conectamos a las familias con calzado resistente, moderno y accesible desde $10 hasta $75.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container info-cards-grid">
+      <div class="feature-box">
+        <i class="ri-team-fill"></i>
+        <h3>Todas las Edades</h3>
+        <p>Desde bebés en etapa de gateo y niños escolares (Vita Kids, Krisas) hasta jóvenes urbanos (Jordan, TN, DN) y adultos mayores (Skechers confort).</p>
+      </div>
+      <div class="feature-box">
+        <i class="ri-price-tag-3-fill"></i>
+        <h3>Precios Directos de Liquidación</h3>
+        <p>Liquidamos excedentes de temporada sin intermediarios, permitiendo precios reales de $10, combos 2x$15 y ediciones top hasta $75.</p>
+      </div>
+      <div class="feature-box">
+        <i class="ri-refresh-line"></i>
+        <h3>Cambio de Talla Fácil</h3>
+        <p>¿No le quedó al niño o al abuelo? Realizamos cambios de talla en tienda física o mediante envío nacional sin complicaciones.</p>
+      </div>
+    </div>
+
+    <!-- Tabla Guía de Tallas -->
+    <div class="container size-guide-wrapper">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">EVITA ERRORES AL PEDIR</span>
+          <h2>Guía Rápida de Tallas Familiares</h2>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Talla EUR</th>
+              <th>Talla US</th>
+              <th>Medida del Pie (cm)</th>
+              <th>Marcas Recomendadas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bebés</strong></td>
+              <td>18 - 23</td>
+              <td>3C - 7C</td>
+              <td>10.5 - 14.0 cm</td>
+              <td>Vita Kids, Nike Baby, Adidas</td>
+            </tr>
+            <tr>
+              <td><strong>Niños / Niñas</strong></td>
+              <td>24 - 34</td>
+              <td>8C - 3Y</td>
+              <td>14.5 - 21.5 cm</td>
+              <td>Krisas, Vita Kids, Puma, Skechers</td>
+            </tr>
+            <tr>
+              <td><strong>Damas / Juvenil</strong></td>
+              <td>35 - 40</td>
+              <td>5W - 9W</td>
+              <td>22.0 - 25.5 cm</td>
+              <td>Nike, Adidas, Retro, Skechers</td>
+            </tr>
+            <tr>
+              <td><strong>Caballeros / Adulto Mayor</strong></td>
+              <td>40 - 45</td>
+              <td>7.5M - 11.5M</td>
+              <td>25.5 - 29.5 cm</td>
+              <td>Jordan, TN, DN, Under Armour, Skechers</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="catalogo.html" class="btn btn-primary">Ir a Elegir mi Talla en el Catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TU1ERZAPATICO Store. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Carrito Lateral y Modal -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3><i class="ri-shopping-bag-3-fill"></i> Tu Carrito (<span id="drawerCartCount">0</span>)</h3>
+      <button class="close-btn" id="closeCartBtn"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="promo-alert-bar" id="promoAlertBar">
+      💡 ¡Agrega 2 productos con etiqueta <strong>2x$15</strong> y paga solo $15 por ambos!
+    </div>
+    <div class="cart-items" id="cartItemsContainer"></div>
+    <div class="cart-footer">
+      <div class="cart-summary-row"><span>Subtotal:</span><span id="cartSubtotal">$0.00</span></div>
+      <div class="cart-summary-row discount-row" id="cartDiscountRow" style="display: none;">
+        <span>Descuento Combo 2x$15:</span><span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="cart-summary-row total-row"><span>Total a Pagar:</span><strong id="cartTotal">$0.00</strong>

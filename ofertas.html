@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zona de Remates $10 y 2x$15 | TU1ERZAPATICO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-banner">
+    <span>🚨 ALERTA DE LIQUIDACIÓN: Todo en esta página está en $10 o aplica para el combo 2x$15</span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="ri-fire-fill"></i></span>
+        TU1ERZAPATICO<span></span>
+      </a>
+
+      <div class="search-box">
+        <input type="text" id="globalSearch" placeholder="Buscar en remates..." />
+        <button type="button" id="searchBtn"><i class="ri-search-line"></i></button>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="ofertas.html" class="active nav-hot">Remates $10 / 2x$15</a>
+        <a href="nosotros.html">Guía & Tienda</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-trigger" id="openCartBtn">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header page-header-red">
+    <div class="container">
+      <span class="badge-dark">OUTLET DE FÁBRICA</span>
+      <h1>GRAN REMATE DEPORTIVO Y FAMILIAR</h1>
+      <p>Llévate pares individuales a <strong>$10</strong> o arma tu dúo con la etiqueta <strong>2x$15</strong>. ¡Unidades limitadas!</p>
+    </div>
+  </section>
+
+  <!-- Sección 2x$15 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">COMBINA COMO QUIERAS</span>
+          <h2>Selección Especial 2x$15 (Cualquier Talla)</h2>
+        </div>
+      </div>
+      <div class="products-grid" id="promo2x15Grid"></div>
+    </div>
+  </section>
+
+  <!-- Sección Remate $10 -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">PRECIO ÚNICO DE LIQUIDACIÓN</span>
+          <h2>Todo a $10 — Calzado y Bolsos</h2>
+        </div>
+      </div>
+      <div class="products-grid" id="remate10Grid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TU1ERZAPATICO Store — Zona de Liquidación Oficial.</p>
+    </div>
+  </footer>
+
+  <!-- Carrito Lateral y Modal -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3><i class="ri-shopping-bag-3-fill"></i> Tu Carrito (<span id="drawerCartCount">0</span>)</h3>
+      <button class="close-btn" id="closeCartBtn"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="promo-alert-bar" id="promoAlertBar">
+      💡 ¡Agrega 2 productos con etiqueta <strong>2x$15</strong> y paga solo $15 por ambos!
+    </div>
+    <div class="cart-items" id="cartItemsContainer"></div>
+    <div class="cart-footer">
+      <div class="cart-summary-row"><span>Subtotal:</span><span id="cartSubtotal">$0.00</span></div>
+      <div class="cart-summary-row discount-row" id="cartDiscountRow" style="display: none;">
+        <span>Descuento Combo 2x$15:</span><span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="cart-summary-row total-row"><span>Total a Pagar:</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Finalizar Pedido por WhatsApp</button>
+    </div>
+  </aside>
+  <div class="overlay-backdrop" id="backdrop"></div>
+  <div class="modal" id="quickViewModal" aria-hidden="true"><div class="modal-content" id="modalBody"></div></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

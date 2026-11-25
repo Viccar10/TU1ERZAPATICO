@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TU1ERZAPATICO | Gran Remate Multimarca de Calzado y Bolsos</title>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Iconos RemixIcon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra superior de anuncios -->
+  <div class="top-banner">
+    <span>🔥 GRAN LIQUIDACIÓN FAMILIAR: Calzado desde <strong>$10</strong> hasta <strong>$75</strong> | Promo especial <strong>2x$15</strong> en modelos seleccionados</span>
+  </div>
+
+  <!-- Navbar Fija -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="ri-fire-fill"></i></span>
+        TU1ERZAPATICO<span></span>
+      </a>
+
+      <!-- Buscador rápido -->
+      <div class="search-box">
+        <input type="text" id="globalSearch" placeholder="Buscar Nike, Jordan, bolsos, niños..." aria-label="Buscar productos" />
+        <button type="button" id="searchBtn" aria-label="Buscar"><i class="ri-search-line"></i></button>
+      </div>
+
+      <!-- Enlaces de navegación -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="ofertas.html" class="nav-hot">Remates $10 / 2x$15</a>
+        <a href="nosotros.html">Guía & Tienda</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- Acciones derecha -->
+      <div class="nav-actions">
+        <button class="cart-trigger" id="openCartBtn" aria-label="Abrir carrito">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menú móvil">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-badge">⚡ LIQUIDACIÓN TOTAL DE TEMPORADA</div>
+        <h1>ESTILO PARA TODA LA FAMILIA DESDE <span>$10</span> HASTA <span>$75</span></h1>
+        <p>
+          Equipa a niños, jóvenes, adultos y abuelos con las mejores marcas internacionales. 
+          Aprovecha nuestros combos relámpago de <strong>2 pares por $15</strong> antes de que se agoten las tallas.
+        </p>
+        <div class="hero-buttons">
+          <a href="#ofertas-destacadas" class="btn btn-primary">Ver Ofertas Ahora <i class="ri-arrow-right-line"></i></a>
+          <a href="ofertas.html" class="btn btn-outline-light">Zona 2x$15 🔥</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>+11</strong><span>Marcas Top</span></div>
+          <div><strong>$10</strong><span>Precio Mínimo</span></div>
+          <div><strong>100%</strong><span>Para la Familia</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card-banner">
+          <span class="price-burst">DESDE<br><strong>$10</strong></span>
+          <img src="imagenes/logo.jpg.jpeg" alt="Zapatilla deportiva roja en oferta" />
+          <div class="hero-floating-tag">
+            <i class="ri-flashlight-fill"></i>
+            <div>
+              <strong>Promo Relámpago</strong>
+              <span>2x$15 en selección urbana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinta de Marcas Disponibles -->
+  <section class="brands-strip">
+    <div class="container">
+      <p class="brands-title">MARCAS DISPONIBLES EN TIENDA</p>
+      <div class="brands-marquee" id="brandQuickFilters">
+        <button class="brand-pill" data-brand="Nike">NIKE</button>
+        <button class="brand-pill" data-brand="Adidas">ADIDAS</button>
+        <button class="brand-pill" data-brand="Jordan">JORDAN</button>
+        <button class="brand-pill" data-brand="Puma">PUMA</button>
+        <button class="brand-pill" data-brand="Retro">RETRO</button>
+        <button class="brand-pill" data-brand="TN">TN</button>
+        <button class="brand-pill" data-brand="DN">DN</button>
+        <button class="brand-pill" data-brand="Under Armour">UNDER ARMOUR</button>
+        <button class="brand-pill" data-brand="Skechers">SKECHERS</button>
+        <button class="brand-pill" data-brand="Vita Kids">VITA KIDS</button>
+        <button class="brand-pill" data-brand="Krisas">KRISAS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Productos y Ofertas Destacadas -->
+  <section class="section" id="ofertas-destacadas">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="section-tag">OPORTUNIDADES IMPERDIBLES</span>
+          <h2>Productos y Remates Destacados</h2>
+        </div>
+        <a href="ofertas.html" class="link-arrow">Ver todos los remates <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+
+      <!-- Barra de filtro rápido por oferta -->
+      <div class="filter-tabs reveal" id="homePromoFilters">
+        <button class="tab-btn active" data-filter="all">Todos</button>
+        <button class="tab-btn" data-filter="remate10">Remate $10</button>
+        <button class="tab-btn" data-filter="promo2x15">Promo 2x$15</button>
+        <button class="tab-btn" data-filter="premium">Colección hasta $75</button>
+      </div>
+
+      <!-- Grid dinámico renderizado por JS -->
+      <div class="products-grid" id="featuredProductsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Banner Intermedio Promo 2x$15 -->
+  <section class="promo-banner-section reveal">
+    <div class="container">
+      <div class="promo-box">
+        <div class="promo-text">
+          <span class="badge-dark">OFERTA ESTRELLA</span>
+          <h3>¡ARMA TU COMBO FAMILIAR 2x$15!</h3>
+          <p>Combina cualquier par identificado con la etiqueta <strong>2x$15</strong> (niños, damas, caballeros o bebés) y el sistema aplicará el descuento automáticamente en tu carrito.</p>
+          <a href="ofertas.html" class="btn btn-dark">Explorar Selección 2x$15</a>
+        </div>
+        <div class="promo-badge-circle">
+          <span>LLEVA 2</span>
+          <strong>$15</strong>
+          <small>TOTAL</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Catálogo y Categorías -->
+  <section class="section bg-light" id="categorias">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="section-tag">PARA CADA INTEGRANTE DEL HOGAR</span>
+          <h2>Explora por Categoría y Público</h2>
+        </div>
+        <a href="catalogo.html" class="link-arrow">Ir al catálogo completo <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+
+      <div class="categories-grid reveal">
+        <a href="catalogo.html?cat=damas" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80" alt="Calzado Damas" />
+          <div class="cat-overlay">
+            <span class="cat-count">Desde $10</span>
+            <h3>Damas</h3>
+            <p>Deportivos, casuales y plataformas</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?cat=caballeros" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80" alt="Calzado Caballeros" />
+          <div class="cat-overlay">
+            <span class="cat-count">Hasta $75</span>
+            <h3>Caballeros</h3>
+            <p>Jordan, TN, DN, Retro y running</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?cat=ninos" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=600&q=80" alt="Calzado Niños y Niñas" />
+          <div class="cat-overlay">
+            <span class="cat-count">Promo 2x$15</span>
+            <h3>Niños y Niñas</h3>
+            <p>Vita Kids, Krisas y deportivos escolares</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?cat=bebes" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&q=80" alt="Calzado Bebés" />
+          <div class="cat-overlay">
+            <span class="cat-count">Desde $10</span>
+            <h3>Bebés</h3>
+            <p>Primeros pasos suaves y antideslizantes</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?cat=mayores" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=600&q=80" alt="Calzado Personas Mayores" />
+          <div class="cat-overlay">
+            <span class="cat-count">Confort Total</span>
+            <h3>Adulto Mayor</h3>
+            <p>Skechers ortopédicos y suela ultraligera</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?cat=botas" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=600&q=80" alt="Botas" />
+          <div class="cat-overlay">
+            <span class="cat-count">Liquidación</span>
+            <h3>Botas</h3>
+            <p>Montañeras, urbanas e impermeables</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?cat=bolsos" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Bolsos y Mochilas" />
+          <div class="cat-overlay">
+            <span class="cat-count">2x$15 / Desde $10</span>
+            <h3>Bolsos y Morrales</h3>
+            <p>Carteras, bandoleros y mochilas escolares</p>
+          </div>
+        </a>
+
+        <a href="ofertas.html" class="cat-card cat-card-hot">
+          <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=600&q=80" alt="Remate Deportivo" />
+          <div class="cat-overlay">
+            <span class="cat-count">🔥 ÚLTIMAS TALLAS</span>
+            <h3>Remate Deportivo</h3>
+            <p>Descuentos directos de hasta 60%</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto con Validación JS -->
+  <section class="section" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="section-tag">ATENCIÓN PERSONALIZADA</span>
+        <h2>¿Buscas una talla o pedido al mayor?</h2>
+        <p>Escríbenos directamente. Confirmamos disponibilidad en tiempo real de modelos Nike, Jordan, Skechers, Vita Kids, Krisas y bolsos para toda tu familia.</p>
+        <ul class="contact-list">
+          <li><i class="ri-map-pin-2-fill"></i> Av. Principal Comercial, Local 14 — Envíos Nacionales</li>
+          <li><a href="https://wa.me/584121809980?text=Hola,%20vengo%20de%20la%20tienda%20web" target="_blank" rel="noopener" aria-label="WhatsApp">+58 412-1809980</li>
+          <i class="ri-whatsapp-line"></i>
+          </a>
+          <li><i class="ri-truck-fill"></i> Delivery gratis en compras mayores a $45</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Envíanos tu consulta</h3>
+        <div class="form-group">
+          <label for="fullName">Nombre completo *</label>
+          <input type="text" id="fullName" placeholder="Ej. María González" required />
+          <small class="error-msg" id="nameError"></small>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" placeholder="correo@ejemplo.com" required />
+            <small class="error-msg" id="emailError"></small>
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono / WhatsApp *</label>
+            <input type="tel" id="phone" placeholder="Ej. 04141234567" required />
+            <small class="error-msg" id="phoneError"></small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">¿Qué estás buscando? *</label>
+          <select id="interest" required>
+            <option value="">Selecciona una opción...</option>
+            <option value="remate10">Remates de $10</option>
+            <option value="promo2x15">Combo 2x$15</option>
+            <option value="familia">Calzado familiar / Tallas específicas</option>
+            <option value="bolsos">Bolsos y morrales</option>
+          </select>
+          <small class="error-msg" id="interestError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje o tallas requeridas *</label>
+          <textarea id="message" rows="3" placeholder="Indica modelo, marca o talla..." required></textarea>
+          <small class="error-msg" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje <i class="ri-send-plane-fill"></i></button>
+        <div class="form-success" id="formSuccess"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-icon"><i class="ri-fire-fill"></i></span>
+          TU1ERZAPATICO<span></span>
+        </a>
+        <p>Tu tienda multimarca de confianza para niños, jóvenes, adultos y personas mayores. Precios de liquidación todo el año desde $10 hasta $75.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="584121809980" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo Completo</a></li>
+          <li><a href="ofertas.html">Zona Remates $10 y 2x$15</a></li>
+          <li><a href="nosotros.html">Guía de Tallas y Tienda</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Categorías Top</h4>
+        <ul class="footer-links">
+          <li><a href="catalogo.html?cat=damas">Zapatos para Damas</a></li>
+          <li><a href="catalogo.html?cat=caballeros">Zapatos para Caballeros</a></li>
+          <li><a href="catalogo.html?cat=ninos">Niños, Niñas y Bebés</a></li>
+          <li><a href="catalogo.html?cat=bolsos">Bolsos, Carteras y Botas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Métodos de Pago Aceptados</h4>
+        <div class="payment-badges">
+          <span><i class="ri-bank-card-fill"></i> Visa / Mastercard</span>
+          <span><i class="ri-exchange-dollar-line"></i> Pago Móvil / Transferencia</span>
+          <span><i class="ri-money-dollar-circle-fill"></i> Efectivo ($ / Bs)</span>
+          <span><i class="ri-secure-payment-fill"></i> Zelle / Binance Pay</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 TU1ERZAPATICO Store. Todos los derechos reservados. Precios de remate sujetos a disponibilidad de inventario.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carrito Lateral (Drawer) -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3><i class="ri-shopping-bag-3-fill"></i> Tu Carrito (<span id="drawerCartCount">0</span>)</h3>
+      <button class="close-btn" id="closeCartBtn" aria-label="Cerrar carrito"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="promo-alert-bar" id="promoAlertBar">
+      💡 ¡Agrega 2 productos con etiqueta <strong>2x$15</strong> y paga solo $15 por ambos!
+    </div>
+    <div class="cart-items" id="cartItemsContainer"></div>
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-row discount-row" id="cartDiscountRow" style="display: none;">
+        <span>Descuento Combo 2x$15:</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="cart-summary-row total-row">
+        <span>Total a Pagar:</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Finalizar Pedido por WhatsApp</button>
+    </div>
+  </aside>
+  <div class="overlay-backdrop" id="backdrop"></div>
+
+  <!-- Modal Vista Rápida / Selección de Talla -->
+  <div class="modal" id="quickViewModal" aria-hidden="true">
+    <div class="modal-content" id="modalBody"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
